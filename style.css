@@ -1,48 +1,65 @@
-/* || general styles */
-
+/* || General styles */
 html {
-    font-family: 'helvetica neue', helvetica, arial, sans-serif;
-  }
-  
-  body {
-    width: 800px;
-    margin: 0 auto;
-  }
-  
-  h1, h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff; /* Fondo de color principal */
+    background-image: url('https://www.transparenttextures.com/patterns/skulls.png'); /* Fondo interesante */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
     font-family: 'Faster One', cursive;
-  }
-  
-  /* header styles */
-  
-  h1 {
+}
+
+h1 {
     font-size: 4rem;
-    text-align: center;
-  }
-  
-  header p {
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
-  /* section styles */
-  
-  section article {
-    width: 33%;
-    float: left;
-  }
-  
-  section p {
-    margin: 5px 0;
-  }
-  
-  section ul {
-    margin-top: 0;
-  }
-  
-  h2 {
+}
+
+h2 {
     font-size: 2.5rem;
     letter-spacing: -5px;
     margin-bottom: 10px;
-  }
+}
+
+#content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+}
+
+.members-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px; /* Fijo para mantener consistencia */
+}
+
+.member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

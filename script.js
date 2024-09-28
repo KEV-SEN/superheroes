@@ -32,9 +32,16 @@ function displaySuperheroes(data) {
     const membersList = document.createElement('div');
     membersList.classList.add('members-list');
     
-    data.members.forEach(member => {
+    data.members.forEach((member, index) => {
         const memberCard = document.createElement('div');
         memberCard.classList.add('member-card');
+        
+        // Añadir la imagen correspondiente
+        const image = document.createElement('img');
+        image.src = `Imagenes/imagen${index + 1}.jpg`; 
+        image.alt = `${member.name}`;
+        image.classList.add('member-image');
+        memberCard.appendChild(image);
         
         const name = document.createElement('h4');
         name.textContent = member.name;
